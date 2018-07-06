@@ -1,16 +1,30 @@
 /*css for jumbotron */
-.jumbotron{
-    background:url(img/sachin.jpg) top center;
-   
-    background-attachment: fixed;
-    color:white;
-    height:100%;
-    margin-top:80px;
-    padding-top: 40px;
-    margin-bottom:8px;
+body{
+    margin-top: 50px;
 }
 
-/*css for carousel images*/
+    .jumbotron{
+        background: url('img/sunsine.jpg') top center;
+        text-align: center;
+        background-size: cover;
+        color:black;
+        
+        height:700px;
+        margin-top:0;
+        margin-bottom:8px;
+     }
+     #quote{
+        position: relative;
+        text-align: center;
+        color:white;
+        font-family: sans-serif;
+        font-display: center;
+      
+    }
+    
+    
+
+
 .images{
     width: 100%;   
 }
@@ -22,13 +36,16 @@
     max-height: 400px;
   }
 
-
+  .main{
+      text-align: center;
+      
+  }
 
 
 /* Footer */
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 section {
-    padding: 60px 0;
+    padding:  0;
     margin-top: 20px;
 }
 
@@ -102,6 +119,19 @@ section .section-title {
 }
 }
 
+.mapouter {
+    text-align: center;
+    height: auto;
+    width: 100%;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: auto;
+    width: 100%;
+}
+
 
 
 
@@ -109,33 +139,42 @@ section .section-title {
 /*  From Medium Devices Up To Larger Devices
  /* ---------------------------------------------------------------------- */
  @media (min-width: 980px) and (max-width: 1199px) {
-
-
+    
+}
     /* ---------------------------------------------------------------------- */
     /*  Only larger Devices
      /* ---------------------------------------------------------------------- */
     @media (min-width: 1200px) {
-    
+        #quote{
+            font-size: 40px;
+        }
+        
     }
+      
     
     /* ---------------------------------------------------------------------- */
     /*  From Small Devices Up To Medium Devices
      /* ---------------------------------------------------------------------- */
     @media (min-width: 768px) and (max-width: 979px) {
-    
+        
     }
     /* ---------------------------------------------------------------------- */
     /*  Extra Small Devices Only
     /* ---------------------------------------------------------------------- */
     @media (max-width: 767px) {
-         
+        
+        #quote{
+            font-size: 25px;
+        } 
     }
     /* ---------------------------------------------------------------------- */
     /*  Extra Small Devices Only
     /* ---------------------------------------------------------------------- */
     @media (max-width: 480px) {
-      
-        
+        #quote{
+            font-size: 22px;
+        } 
+       
     }
     /* ---------------------------------------------------------------------- */
     /*  Up To Medium Devices
@@ -144,12 +183,14 @@ section .section-title {
         /***
          general body settings
          ***/
-    
+
     
     }
     /* ---------------------------------------------------------------------- */
     /*  Up To Medium Devices
     /* ---------------------------------------------------------------------- */
     @media (min-width: 768px) {
-    
+        #quote{
+            font-size: 25px;
+        } 
     }   
